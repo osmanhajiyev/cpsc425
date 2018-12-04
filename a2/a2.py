@@ -6,12 +6,12 @@ from scipy import signal
 import ncc
 
 #Open all of the images
-judybats = Image.open("/Users/osman/School/CPSC425/cpsc425/a2/hw2/faces/judybats.jpg")
-sports = Image.open("/Users/osman/School/CPSC425/cpsc425/a2/hw2/faces/sports.jpg")
-fans = Image.open("/Users/osman/School/CPSC425/cpsc425/a2/hw2/faces/fans.jpg")
-family = Image.open("/Users/osman/School/CPSC425/cpsc425/a2/hw2/faces/family.jpg")
-students = Image.open("/Users/osman/School/CPSC425/cpsc425/a2/hw2/faces/students.jpg")
-tree = Image.open("/Users/osman/School/CPSC425/cpsc425/a2/hw2/faces/tree.jpg")
+judybats = Image.open("/Users/osman/School/CPSC425/cpsc425/a2/faces/judybats.jpg")
+sports = Image.open("/Users/osman/School/CPSC425/cpsc425/a2/faces/sports.jpg")
+fans = Image.open("/Users/osman/School/CPSC425/cpsc425/a2/faces/fans.jpg")
+family = Image.open("/Users/osman/School/CPSC425/cpsc425/a2/faces/family.jpg")
+students = Image.open("/Users/osman/School/CPSC425/cpsc425/a2/faces/students.jpg")
+tree = Image.open("/Users/osman/School/CPSC425/cpsc425/a2/faces/tree.jpg")
 
 #A function for creating a pyramid of images where every successor image is 0.75x size of its predecessor
 def MakePyramid(image, minsize):
@@ -111,7 +111,7 @@ ShowPyramid(pyramidJudybats)
 #8 false negatives and 8 false positives with threshold = 0.6
 threshold = 0.6
 
-template = Image.open("/Users/osman/School/CPSC425/cpsc425/a2/hw2/faces/template.jpg")
+template = Image.open("/Users/osman/School/CPSC425/cpsc425/a2/faces/template.jpg")
 FindTemplate(pyramidJudybats, template, threshold)
 FindTemplate(pyramidSports, template, threshold)
 FindTemplate(pyramidFans, template, threshold)

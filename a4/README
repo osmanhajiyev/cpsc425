@@ -1,0 +1,47 @@
+
+             Sample code for Assignment 5 of CPSC 425
+             --------------------------------------
+
+The program SIFTmatch.py contains sample Python code for reading images and
+their invariant keypoints.  It also shows how to display the images and draw
+lines connecting keypoints from each image.  See the comments in SIFTmatch.py
+for details.
+
+The directory also contains some sample images and their keypoints, which have
+already been extracted and stored in associated files.
+
+You can run the matching program on the sample data by typing
+
+  python SIFTmatch.py
+
+at the command prompt (starting it from this directory).
+
+The built-in example is
+
+  match('scene', 'basmati')
+
+You can edit the file to try
+
+  match('scene', 'book')
+  match('scene', 'box')
+
+Finally,
+
+   match('library2','library')
+
+shows two images of Main Library at UBC taken from different viewpoints
+
+Creating SIFT features for new images
+-------------------------------------
+
+This is not part of the required assignment, but if you wish to try the
+program on new images, you can run the "keypoints" program (compiled for
+Linux) in this directory as follows:
+
+% keypoints <image.pgm >image.key
+
+This will generate the keypoint file image.key that can be used in the
+same way as the other .key files that have been provided.
+
+
+
